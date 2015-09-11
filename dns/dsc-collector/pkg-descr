@@ -1,0 +1,11 @@
+DSC collector is a binary program, named dsc, which snoops on DNS messages.
+It is written in C and uses libpcap for packet capture.
+dsc uses a relatively simple configuration file called dsc.conf to define certain
+parameters and options. The configuration file also determines the datasets that
+dsc collects.
+
+A Dataset is a 2-D array of counters of IP/DNS message properties. You
+can define each dimension of the array independently. For example you might
+define a dataset categorized by DNS query type along one dimension and TLD
+along the other. dsc dumps the datasets from memory to XML files every 60
+seconds.
