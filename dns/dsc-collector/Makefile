@@ -1,7 +1,8 @@
+DISTNAME=       dsc
 PORTNAME=		dsc-collector
 PORTVERSION=	201502251630
 CATEGORIES=		dns ipv6
-MASTER_SITES=   GH
+MASTER_SITES=   http://dns.measurement-factory.com/tools/dsc/download/
 
 MAINTAINER=		john.bond@icann.org
 COMMENT=		DNS Data collection
