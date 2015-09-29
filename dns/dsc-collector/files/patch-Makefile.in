@@ -1,6 +1,6 @@
 --- Makefile.in.orig	2015-09-11 19:09:17 UTC
 +++ Makefile.in
-@@ -4,7 +4,7 @@
+@@ -4,7 +4,8 @@
  CPPFLAGS = ${CFLAGS}
  MYCPPFLAGS = -g -DUSE_IPV6=1 -I $(HAPY)/src/include -I/usr/local/include
  TODAY != date +%Y%m%d
@@ -10,7 +10,7 @@
  
  LDFLAGS += @LDFLAGS@	# from configure
  CFLAGS += @CFLAGS@	# from configure
-@@ -66,10 +66,7 @@
+@@ -66,10 +66,6 @@
  
  install: $(PROG)
  	@if test -n "$(INSTALLDIR)" ; then echo "installing in $$INSTALLDIR" ; else echo "set INSTALLDIR first"; false ; fi
@@ -18,7 +18,6 @@
 -	install -d -m 755 $(INSTALLDIR)/etc/
 -	install -d -m 755 $(INSTALLDIR)/var/
 -	install -d -m 755 $(INSTALLDIR)/var/log/
-+	install -d -m 755 /var/run/dsc
  	install -m 755 $(PROG) $(INSTALLDIR)/bin/
  	install -m 644 $(PROG).conf.sample $(INSTALLDIR)/etc/
  
