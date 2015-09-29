@@ -5,7 +5,7 @@
  MYCPPFLAGS = -g -DUSE_IPV6=1 -I $(HAPY)/src/include -I/usr/local/include
  TODAY != date +%Y%m%d
 -INSTALLDIR=/usr/local/dsc
-+INSTALLDIR=@prefix@
++INSTALLDIR=${STAGEDIR}/@prefix@
  
  LDFLAGS += @LDFLAGS@	# from configure
  CFLAGS += @CFLAGS@	# from configure
