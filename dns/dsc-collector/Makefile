@@ -9,6 +9,7 @@ COMMENT=		DNS Data collection
 
 LICENSE=		BSD3CLAUSE
 WRKSRC_SUBDIR=  collector/dsc
+GNU_CONFIGURE=  yes
 
 
 .include <bsd.port.mk>
