@@ -5,24 +5,18 @@
  MYCPPFLAGS = -g -DUSE_IPV6=1 -I $(HAPY)/src/include -I/usr/local/include
  TODAY != date +%Y%m%d
 -INSTALLDIR=/usr/local/dsc
-+INSTALLDIR=/usr/local
++INSTALLDIR=@prefix@
 +.DEFAULT_GOAL := $(PROG)
  
  LDFLAGS += @LDFLAGS@	# from configure
  CFLAGS += @CFLAGS@	# from configure
-@@ -64,15 +64,6 @@
- $(PROG): $(OBJS) $(LIBHAPY)
-  $(CXX) -o $@ $(OBJS) $(LDFLAGS) $(LIBS)
+@@ -66,10 +66,6 @@
 
--install: $(PROG)
--	@if test -n "$(INSTALLDIR)" ; then echo "installing in $$INSTALLDIR" ; else echo "set INSTALLDIR first"; false ; fi
--	install -d -m 755 $(INSTALLDIR)/bin/
--	install -d -m 755 $(INSTALLDIR)/etc/
--	install -d -m 755 $(INSTALLDIR)/var/
--	install -d -m 755 $(INSTALLDIR)/var/log/
--	install -m 755 $(PROG) $(INSTALLDIR)/bin/
--	install -m 644 $(PROG).conf.sample $(INSTALLDIR)/etc/
--
- clean:
-  rm -f $(OBJS)
-  rm -f $(PROG)
+ install: $(PROG)
+  @if test -n "$(INSTALLDIR)" ; then echo "installing in $$INSTALLDIR" ; else echo "set INSTALLDIR first"; false ; fi
+-  install -d -m 755 $(INSTALLDIR)/bin/
+-  install -d -m 755 $(INSTALLDIR)/etc/
+-  install -d -m 755 $(INSTALLDIR)/var/
+-  install -d -m 755 $(INSTALLDIR)/var/log/
+  install -m 755 $(PROG) $(INSTALLDIR)/bin/
+  install -m 644 $(PROG).conf.sample $(INSTALLDIR)/etc/
