@@ -6,6 +6,7 @@
  TODAY != date +%Y%m%d
 -INSTALLDIR=/usr/local/dsc
 +INSTALLDIR=/usr/local
++.DEFAULT_GOAL := $(PROG)
  
  LDFLAGS += @LDFLAGS@	# from configure
  CFLAGS += @CFLAGS@	# from configure
