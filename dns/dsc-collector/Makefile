@@ -8,6 +8,7 @@ MAINTAINER=		john.bond@icann.org
 COMMENT=		DNS Data collection
 
 LICENSE=		BSD3CLAUSE
+WRKSRC_SUBDIR=  collector/dsc
 
 
 .include <bsd.port.mk>
