@@ -1,2 +1,6 @@
 bin/dsc
 etc/dsc.conf.sample
+libexec/upload-prep.pl
+libexec/upload-rsync.sh
+libexec/upload-ssh.sh
+libexec/upload-x509.sh
