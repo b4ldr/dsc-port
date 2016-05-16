@@ -1,5 +1,5 @@
---- dsc/Makefile.in.orig	2015-09-29 15:40:45.000000000 +0100
-+++ dsc/Makefile.in	2015-09-29 15:41:19.000000000 +0100
+--- dsc/Makefile.in.orig	2012-08-28 00:23:37 UTC
++++ dsc/Makefile.in
 @@ -4,7 +4,7 @@
  CPPFLAGS = ${CFLAGS}
  MYCPPFLAGS = -g -DUSE_IPV6=1 -I $(HAPY)/src/include -I/usr/local/include

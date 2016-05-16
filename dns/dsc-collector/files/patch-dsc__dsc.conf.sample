@@ -1,4 +1,4 @@
---- dsc/dsc.conf.sample.orig	2015-09-11 19:09:25 UTC
+--- dsc/dsc.conf.sample.orig	2012-02-29 18:47:48 UTC
 +++ dsc/dsc.conf.sample
 @@ -12,7 +12,7 @@
  #

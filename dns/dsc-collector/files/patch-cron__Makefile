@@ -1,0 +1,11 @@
+--- cron/Makefile.orig	2016-05-16 17:22:34 UTC
++++ cron/Makefile
+@@ -4,7 +4,7 @@
+ SCRIPTS += upload-ssh.sh
+ SCRIPTS += upload-prep.pl
+ 
+-INSTALLDIR=/usr/local/dsc
++INSTALLDIR=${DESTDIR}/@prefix@
+ 
+ all:
+ 	@if perl -e 'use Proc::PID::File;' 2>/dev/null ; then \
