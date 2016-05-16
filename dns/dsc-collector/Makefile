@@ -9,7 +9,6 @@ COMMENT=		DNS Data collection
 
 LICENSE=		BSD3CLAUSE
 WRKSRC_SUBDIR=  collector
-GNU_CONFIGURE=  yes
 
 post-install:
 	  ${INSTALL_SCRIPT} ${WRKSRC}/dsc/dsc.sh ${PREFIX}/etc/rc.d/dsc
