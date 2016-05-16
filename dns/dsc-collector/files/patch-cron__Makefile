@@ -5,7 +5,7 @@
  SCRIPTS += upload-prep.pl
  
 -INSTALLDIR=/usr/local/dsc
-+INSTALLDIR=${DESTDIR}
++INSTALLDIR=${DESTDIR}/usr/local
  
  all:
  	@if perl -e 'use Proc::PID::File;' 2>/dev/null ; then \
