@@ -11,6 +11,7 @@ LICENSE=		BSD3CLAUSE
 
 GNU_CONFIGURE=  yes
 post-install:
+	  ${MKDIR} ${PREFIX}/etc/rc.d/
 	  ${INSTALL_SCRIPT} ${WRKSRC}/src/dsc.sh ${PREFIX}/etc/rc.d/dsc
 
 
