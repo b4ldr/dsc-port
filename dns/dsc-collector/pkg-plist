@@ -1,6 +1,12 @@
 bin/dsc
-etc/dsc.conf.sample
-libexec/upload-prep.pl
-libexec/upload-rsync.sh
-libexec/upload-ssh.sh
-libexec/upload-x509.sh
+etc/dsc/dsc.conf.sample
+libexec/dsc/upload-prep.pl
+libexec/dsc/upload-rsync.sh
+libexec/dsc/upload-ssh.sh
+libexec/dsc/upload-x509.sh
+man/man1/dsc.1.gz
+man/man5/dsc.conf.5.gz
+share/doc/dsc/CHANGES
+share/doc/dsc/LICENSE
+share/doc/dsc/README.md
+share/doc/dsc/UPGRADE.md
