@@ -1,8 +1,8 @@
 PORTNAME=		dsc-collector
-PORTVERSION=	201502251630
+PORTVERSION=	2.1.1
 DISTNAME=       dsc-${PORTVERSION}
 CATEGORIES=		dns ipv6
-MASTER_SITES=   http://dns.measurement-factory.com/tools/dsc/download/
+MASTER_SITES=   https://www.dns-oarc.net/files/dsc/
 
 MAINTAINER=		john.bond@icann.org
 COMMENT=		DNS Data collection
