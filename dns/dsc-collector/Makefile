@@ -1,5 +1,5 @@
 PORTNAME=		dsc-collector
-PORTVERSION=	2.1.1
+PORTVERSION=	2.6.1
 DISTNAME=       dsc-${PORTVERSION}
 CATEGORIES=		dns ipv6
 MASTER_SITES=   https://www.dns-oarc.net/files/dsc/
